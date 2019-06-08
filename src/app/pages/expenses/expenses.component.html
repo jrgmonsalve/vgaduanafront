@@ -1,3 +1,45 @@
-<p>
-  expenses works!
-</p>
+<h1>Listado de gastos</h1>
+<hr>
+<div class="row">
+  <div class="col text-right">
+    <button routerLink="/expense/new"
+            class="btn btn-primary">
+      + Agregar
+    </button>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-sm mt-3">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">CATEGORIA</th>
+          <th scope="col">DESCRIPCION</th>
+          <th scope="col">VALOR</th>
+          <th scope="col">USUARIO</th>
+          <th scope="col">FECHA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>luz</td>
+          <td>bla bla bla</td>
+          <td>15000</td>
+          <td>johan</td>
+          <td>2019-06-08</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<div class="alert alert-warning text-center mt-3">
+  <h4 class="alert-heading">No hay registros!!</h4>
+</div>
+
+<div class="alert alert-info text-center mt-3">
+  <h4 class="alert-heading">Cargando</h4>
+  <p>
+      Espere por favor
+  </p>
+</div>
